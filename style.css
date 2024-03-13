@@ -1,0 +1,158 @@
+@font-face { /* define custom font */
+    font-family: bold-robo;
+    src: url(assets/fonts/Roboto-Bold.ttf);
+}
+
+@font-face {/* define custom font */
+    font-family: light-robo;
+    src: url(assets/fonts/Roboto-Light.ttf);
+}
+/* Hero Section  */
+.hero {
+    background-image: url(assets/imgz-icons/bg.png);
+    background-size: cover;
+    background-position: center;
+    height: 750px;
+}
+
+:root {
+    --purple: #4D2C5E;
+
+}
+/* Sign-in button radius  */
+.btn-radius {
+    border-radius: 20px;
+}
+/* nav-bar items color  */
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+}
+/* font of brand name on the nav bar  */
+.roboto-brand {
+
+    font-family: bold-robo;
+    font-size: 30px;
+}
+/* font style for nav-items  */
+.roboto {
+    font-family: bold-robo;
+    font-size: 18px;
+}
+/* Sign-in button background color  */
+.signin-clr {
+    background-color: var(--purple);
+    font-family: light-robo;
+}
+/* CSS for pre-line wrapping */
+.preline {
+    white-space: pre-line;
+}
+/* text color of main heading */
+.smart {
+    color: #050C26;
+}
+
+/* text color of specific words in main heading  */
+span {
+    color: #ff7647;
+}
+/* color of paragraph in main description  */
+.p-clr {
+    color: #8A8A8A;
+}
+/* style for location input field  */
+.location {
+    border-radius: 30px;
+    width: 70%;
+    height: 20%;
+}
+/* style for seach icon within input  */
+.search-icon {
+    position: absolute;
+    left: 29px;
+    top: 227px;
+}
+/* style for continue button  */
+.continue {
+    width: 25%;
+    height: 20%;
+    border-radius: 29px;
+    position: absolute;
+    right: 176px;
+    top: 209px;
+}
+/* width of main img  in the hero section   */
+.hero-img{
+    /* height: 100%; */
+    width: 87%;
+}
+
+/* MQ at md  */
+@media screen and (max-width:768px) {
+    /* height of background-image at 768  */
+    .hero{
+        height: 1032px;
+    }
+    /* to hide .search-icon at 768 */
+    .search-icon {
+        display: none;
+    }
+    /* padding for moving the main heading and paragraph to left  */
+    .p-left {
+        padding-left: 62px;
+    }
+    /* custom height of input field and continue button  */
+    .continue,.location{
+        height: 27%;
+    }
+}
+
+
+/* MQ at sm  */
+@media screen and (max-width:576px) {
+    /* adjusting continue button  on small screens  */
+    .continue {
+        right: 165px;
+    }
+    /* height of background-image at 576  */
+    .hero{
+        height: 981px;
+    }
+    /* adjusted width height of input field  */
+    .location {
+        
+        width: 70%;
+        height: 25%;
+    }
+}
+/* MQ for perfect mobile view  */
+@media screen and (max-width:400px) {
+    /* height of background-image at 400  */
+    .hero{
+        height: 887px;
+    }
+    .roboto-brand{
+        font-size: 20px;
+    }
+    /* width of input field  */
+    .location {
+        width: 100%;
+    }
+    .search-icon{
+        display: block;
+        top: 282px;
+        left: 33px;
+    }
+    /* for pushing the main description to the left  */
+    .p-left {
+        padding-left: 16px;
+    }
+    /* adjusting style of continue button  in mobile view */
+    .continue {
+        top: 342px;
+        right: 90px;
+        width: 50%;
+        height: 20%;
+    }
+
+}
