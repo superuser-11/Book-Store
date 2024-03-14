@@ -7,6 +7,14 @@
     font-family: light-robo;
     src: url(assets/fonts/Roboto-Light.ttf);
 }
+@font-face {
+    font-family: jost;
+    src: url(assets/fonts/Jost-Bold.ttf);
+}
+@font-face {
+    font-family: popp;
+    src: url(assets/fonts/Poppins-Light.ttf);
+}
 /* Hero Section  */
 .hero {
     background-image: url(assets/imgz-icons/bg.png);
@@ -14,11 +22,14 @@
     background-position: center;
     height: 750px;
 }
-
+/* colors */
 :root {
     --purple: #4D2C5E;
-
 }
+:root{
+    --orng:#ff7647;
+}
+
 /* Sign-in button radius  */
 .btn-radius {
     border-radius: 20px;
@@ -87,6 +98,83 @@ span {
     width: 87%;
 }
 
+/* Offers section  */
+
+/* background color of  offers section  */
+.offers{
+    position: relative;
+    bottom: 112px;
+}
+.offer-clr{
+    background-color: var(--purple);
+    border-radius: 15px;
+}
+/* blur background color of offers pics */
+.offers-pic{
+    border-radius: 27px;
+    padding: 14px 14px 14px 14px;
+    background-color: #71557E;
+}
+/* paragraph color in offers  */
+.text-clr{
+    color: rgba(255, 255, 255, 0.6);
+    
+}
+/* Tracks Section  */
+/* track heading custom font   */
+.track-hd{
+    font-family: jost;
+}
+/* Track paragraph custom font  & color*/
+.track-p{
+    font-family: popp;
+    color: rgba(138, 138, 138, 1);
+}
+.arrow{
+    position: absolute;
+    bottom: -25px;
+    right: -104px;
+}
+.bulb{
+    bottom: 17px;
+    left: -100px;
+    position: absolute;
+}
+/* code of cards in tracks section  */
+/* padding to cards and space between them */
+.card-pad{
+    padding: 13px;
+    border-radius: 14px;
+}
+/* paragraph ui/ux  */
+.ui-ux-p,.detail{
+    color: rgba(138, 138, 138, 1);
+}
+/* deatil like duration courses and sales  */
+.detail{
+    font-size: 13px;
+}
+/* color of 98$ in detail   */
+.dollar{
+    color: var(--orng)
+}
+/* adjusted position of stars  */
+.stars{
+    position: absolute;
+    bottom: 142px;
+    left: 247px;
+}
+/* styles of join course btn  */
+.btn-clr{
+    background-color: var(--orng);
+    position: absolute;
+    left: 116px;
+    font-family: bold-robo;
+    border-radius: 20px;
+    padding: 10px 15px 10px 15px;
+}
+
+
 /* MQ at md  */
 @media screen and (max-width:768px) {
     /* height of background-image at 768  */
@@ -104,6 +192,15 @@ span {
     /* custom height of input field and continue button  */
     .continue,.location{
         height: 27%;
+    }
+    .offers{
+        bottom: 0;
+    }
+    .stars{
+        left: 223px;
+    }
+    .bulb,.arrow{
+        display: none;
     }
 }
 
@@ -123,6 +220,15 @@ span {
         
         width: 70%;
         height: 25%;
+    }
+    .offers{
+        bottom: 0;
+    }
+    .stars{
+        left: 405px;
+    }
+    .bulb,.arrow{
+        display: none;
     }
 }
 /* MQ for perfect mobile view  */
@@ -153,6 +259,15 @@ span {
         right: 90px;
         width: 50%;
         height: 20%;
+    }
+    .offers{
+        bottom: 0;
+    }
+    .stars{
+        left: 214px;
+    }
+    .bulb,.arrow{
+        display: none;
     }
 
 }
