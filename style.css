@@ -1,20 +1,34 @@
-@font-face { /* define custom font */
+@font-face {
+    /* define custom font */
     font-family: bold-robo;
     src: url(assets/fonts/Roboto-Bold.ttf);
 }
 
-@font-face {/* define custom font */
+@font-face {
+    /* define custom font */
     font-family: light-robo;
     src: url(assets/fonts/Roboto-Light.ttf);
 }
+
 @font-face {
     font-family: jost;
     src: url(assets/fonts/Jost-Bold.ttf);
 }
+
 @font-face {
     font-family: popp;
     src: url(assets/fonts/Poppins-Light.ttf);
 }
+
+/* colors */
+:root {
+    --purple: #4D2C5E;
+}
+
+:root {
+    --orng: #ff7647;
+}
+
 /* Hero Section  */
 .hero {
     background-image: url(assets/imgz-icons/bg.png);
@@ -22,42 +36,41 @@
     background-position: center;
     height: 750px;
 }
-/* colors */
-:root {
-    --purple: #4D2C5E;
-}
-:root{
-    --orng:#ff7647;
-}
 
 /* Sign-in button radius  */
 .btn-radius {
     border-radius: 20px;
 }
+
 /* nav-bar items color  */
 .navbar-light .navbar-nav .nav-link {
     color: black;
 }
+
 /* font of brand name on the nav bar  */
 .roboto-brand {
 
     font-family: bold-robo;
     font-size: 30px;
 }
+
 /* font style for nav-items  */
 .roboto {
     font-family: bold-robo;
     font-size: 18px;
 }
+
 /* Sign-in button background color  */
 .signin-clr {
     background-color: var(--purple);
     font-family: light-robo;
 }
+
 /* CSS for pre-line wrapping */
 .preline {
     white-space: pre-line;
 }
+
 /* text color of main heading */
 .smart {
     color: #050C26;
@@ -67,22 +80,26 @@
 span {
     color: #ff7647;
 }
+
 /* color of paragraph in main description  */
 .p-clr {
     color: #8A8A8A;
 }
+
 /* style for location input field  */
 .location {
     border-radius: 30px;
     width: 70%;
     height: 20%;
 }
+
 /* style for seach icon within input  */
 .search-icon {
     position: absolute;
     left: 29px;
     top: 227px;
 }
+
 /* style for continue button  */
 .continue {
     width: 25%;
@@ -92,80 +109,99 @@ span {
     right: 176px;
     top: 209px;
 }
+
 /* width of main img  in the hero section   */
-.hero-img{
+.hero-img {
     /* height: 100%; */
     width: 87%;
 }
-
+/* --------------------------------------------------------------------------------- */
 /* Offers section  */
 
 /* background color of  offers section  */
-.offers{
+.offers {
     position: relative;
     bottom: 112px;
 }
-.offer-clr{
+
+.offer-clr {
     background-color: var(--purple);
     border-radius: 15px;
 }
+
 /* blur background color of offers pics */
-.offers-pic{
+.offers-pic {
     border-radius: 27px;
     padding: 14px 14px 14px 14px;
     background-color: #71557E;
 }
+
 /* paragraph color in offers  */
-.text-clr{
+.text-clr {
     color: rgba(255, 255, 255, 0.6);
-    
+
 }
+/* --------------------------------------------------------------------------------- */
+
 /* Tracks Section  */
 /* track heading custom font   */
-.track-hd{
+.track-hd {
     font-family: jost;
 }
+
 /* Track paragraph custom font  & color*/
-.track-p{
+.track-p {
     font-family: popp;
     color: rgba(138, 138, 138, 1);
 }
-.arrow{
+
+.arrow {
     position: absolute;
     bottom: -25px;
     right: -104px;
 }
-.bulb{
+
+.bulb {
     bottom: 17px;
     left: -100px;
     position: absolute;
 }
+
 /* code of cards in tracks section  */
 /* padding to cards and space between them */
-.card-pad{
+/* and shadow  */
+.card-pad {
     padding: 13px;
     border-radius: 14px;
+    box-shadow: 2px 3px 7px 7px rgba(138, 138, 138, 0.308)
+
 }
+
 /* paragraph ui/ux  */
-.ui-ux-p,.detail{
+.ui-ux-p,
+.detail {
     color: rgba(138, 138, 138, 1);
 }
+
 /* deatil like duration courses and sales  */
-.detail{
+.detail {
     font-size: 13px;
 }
+
 /* color of 98$ in detail   */
-.dollar{
+.dollar {
     color: var(--orng)
 }
+
 /* adjusted position of stars  */
-.stars{
+.stars {
     position: absolute;
     bottom: 142px;
     left: 247px;
 }
+
 /* styles of join course btn  */
-.btn-clr{
+.btn-clr {
     background-color: var(--orng);
     position: absolute;
     left: 116px;
@@ -173,86 +209,232 @@ span {
     border-radius: 20px;
     padding: 10px 15px 10px 15px;
 }
+/* ------------------------------------------------------------------------------------ */
+
+/* Premium Section  */
+/* premium bg image  */
+.premuim-bg {
+    background-image: url(assets/imgz-icons/premium-bg.png);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+/* girl img in premium section  */
+.premium-girl {
+    width: 67%;
+}
+
+/* main heading in .premium section  */
+.pre-heading {
+    font-family: bold-robo;
+}
+.premium-p{
+    color: rgba(138, 138, 138, 1);
+}
+
+/* h5 under main heading  */
+.accessible {
+    font-family: bold-robo;
+
+}
+
+/* styling for heart and jigsaw icons */
+.hearts {
+    border-radius: 30px;
+    padding: 14px;
+    background-color: var(--purple);
+}
+
+/* position for adjusting text with icons */
+.position-relative {
+    bottom: 12px;
+    left: 26px;
+}
+/* ---------------------------------------------------------------------------------------- */
+/* Student review Section  */
+/* padding to the student cards */
+.st{
+    padding: 15px;
+}
+/* color to the student review paragraphs */
+.st-p{
+    color: rgba(172, 172, 172, 1);
+}
+.st-shadow{
+    box-shadow: 2px 3px 7px 7px rgba(138, 138, 138, 1) !important;
+
+}
+/* -------------------------------------------------------------------------------------------- */
+/* Professor Section  */
+/* Professor section used the code of track section  as a reference point*/
+/* ------------------------------------------------------------------------------------------------ */
+/* NewsLetter Section  */
+.letter-bg-clr{
+    background-color: var(--purple);
+    border-radius: 10px;
+}
+.letter-email{
+    padding-left: 28px;
+    border-radius: 50px;
+    height: 60px;
+    width: 100%;
+    position: relative;
+    left: 197px;
+    outline: none;
+}
+.letter-email:focus{
+    outline: var(--orng);
+}
+.send-btn{
+    position: absolute;
+    right: 211px;
+    top: 7px;
+    border-radius: 50px;
+    height: 78%;
+    width: 40%;
+    background-color: var(--orng);
+}
+/* ------------------------------------------------------------------------------------ */
+/* Footer Section  */
+.foot{
+    background-image: url(assets/imgz-icons/footer-bg.png);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
 
 
+/* Media Queries For Resposiveness */
 /* MQ at md  */
 @media screen and (max-width:768px) {
+
     /* height of background-image at 768  */
-    .hero{
+    .hero {
         height: 1032px;
     }
+
     /* to hide .search-icon at 768 */
     .search-icon {
         display: none;
     }
+
     /* padding for moving the main heading and paragraph to left  */
     .p-left {
         padding-left: 62px;
     }
+
     /* custom height of input field and continue button  */
-    .continue,.location{
+    .continue,
+    .location {
         height: 27%;
     }
-    .offers{
+
+    .offers {
         bottom: 0;
     }
-    .stars{
+
+    .stars {
         left: 223px;
     }
-    .bulb,.arrow{
+
+    .bulb,
+    .arrow {
         display: none;
+    }
+
+    .premuim-bg {
+        height: 1070px;
+    }
+    .letter-email{
+        left: 41px;
+        width: 424px;
+    }
+    .send-btn{
+        right: 72px;
+    }
+    .foot{
+        height: 479px;
+    }
+    .font-size{
+        font-size: 15px;
     }
 }
 
 
 /* MQ at sm  */
 @media screen and (max-width:576px) {
+
     /* adjusting continue button  on small screens  */
     .continue {
         right: 165px;
     }
+
     /* height of background-image at 576  */
-    .hero{
+    .hero {
         height: 981px;
     }
+
     /* adjusted width height of input field  */
     .location {
-        
+
         width: 70%;
         height: 25%;
     }
-    .offers{
+
+    .offers {
         bottom: 0;
     }
-    .stars{
+
+    .stars {
         left: 405px;
     }
-    .bulb,.arrow{
+
+    .bulb,
+    .arrow {
         display: none;
     }
+
+    .premuim-bg {
+        height: 907px;
+    }
+    .send-btn{
+        right: 160px;
+        height: unset;
+    }
+    .foot{
+        height: 1005px;
+    }
 }
+
 /* MQ for perfect mobile view  */
 @media screen and (max-width:400px) {
+
     /* height of background-image at 400  */
-    .hero{
+    .hero {
         height: 887px;
     }
-    .roboto-brand{
+
+    .roboto-brand {
         font-size: 20px;
     }
+
     /* width of input field  */
     .location {
         width: 100%;
     }
-    .search-icon{
+
+    .search-icon {
         display: block;
         top: 282px;
         left: 33px;
     }
+
     /* for pushing the main description to the left  */
     .p-left {
         padding-left: 16px;
     }
+
     /* adjusting style of continue button  in mobile view */
     .continue {
         top: 342px;
@@ -260,14 +442,40 @@ span {
         width: 50%;
         height: 20%;
     }
-    .offers{
+
+    .offers {
         bottom: 0;
     }
-    .stars{
+
+    .stars {
         left: 214px;
     }
-    .bulb,.arrow{
+
+    .bulb,
+    .arrow {
         display: none;
+    }
+
+    .premuim-bg {
+        height: 820px;
+    }
+
+    .position-relative {
+        bottom: 22px;
+        left: 15px;
+    }
+    .pre-heading{
+        font-size: 2rem;
+    }
+    .letter-email{
+        width: 298px;
+        left: 18px;
+    }
+    .send-btn{
+        right: 114px;
+    }
+    .foot{
+        height: 1026px;
     }
 
 }
