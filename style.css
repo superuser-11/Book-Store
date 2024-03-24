@@ -20,6 +20,16 @@
     src: url(assets/fonts/Poppins-Light.ttf);
 }
 
+@font-face {
+    font-family: popp-bold;
+    src: url(assets/fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: semibold-popp;
+    src: url(assets/fonts/Poppins-SemiBold.ttf);
+}
+
 /* colors */
 :root {
     --purple: #4D2C5E;
@@ -30,16 +40,17 @@
 }
 
 /* Hero Section  */
-.hero {
-    background-image: url(assets/imgz-icons/bg.png);
+.hero , .nav-bg-clr{
+    background-color: #FDF8EE;
     background-size: cover;
     background-position: center;
-    height: 750px;
+    height: 100%;
 }
 
 /* Sign-in button radius  */
 .btn-radius {
-    border-radius: 20px;
+   
+    background-color: var(--purple);
 }
 
 /* nav-bar items color  */
@@ -88,9 +99,7 @@ span {
 
 /* style for location input field  */
 .location {
-    border-radius: 30px;
-    width: 70%;
-    height: 20%;
+    padding: 26px 0px 26px 17px;
 }
 
 /* style for seach icon within input  */
@@ -100,28 +109,20 @@ span {
     top: 227px;
 }
 
-/* style for continue button  */
-.continue {
-    width: 25%;
-    height: 20%;
-    border-radius: 29px;
-    position: absolute;
-    right: 176px;
-    top: 209px;
-}
 
 /* width of main img  in the hero section   */
 .hero-img {
     /* height: 100%; */
     width: 87%;
 }
+
 /* --------------------------------------------------------------------------------- */
 /* Offers section  */
 
 /* background color of  offers section  */
 .offers {
     position: relative;
-    bottom: 112px;
+    bottom: 86px;
 }
 
 .offer-clr {
@@ -141,6 +142,7 @@ span {
     color: rgba(255, 255, 255, 0.6);
 
 }
+
 /* --------------------------------------------------------------------------------- */
 
 /* Tracks Section  */
@@ -155,18 +157,6 @@ span {
     color: rgba(138, 138, 138, 1);
 }
 
-.arrow {
-    position: absolute;
-    bottom: -25px;
-    right: -104px;
-}
-
-.bulb {
-    bottom: 17px;
-    left: -100px;
-    position: absolute;
-}
-
 /* code of cards in tracks section  */
 /* padding to cards and space between them */
 /* and shadow  */
@@ -174,7 +164,6 @@ span {
     padding: 13px;
     border-radius: 14px;
     box-shadow: 2px 3px 7px 7px rgba(138, 138, 138, 0.308)
-
 }
 
 /* paragraph ui/ux  */
@@ -193,22 +182,15 @@ span {
     color: var(--orng)
 }
 
-/* adjusted position of stars  */
-.stars {
-    position: absolute;
-    bottom: 142px;
-    left: 247px;
-}
-
 /* styles of join course btn  */
 .btn-clr {
+    width: 100%;
     background-color: var(--orng);
-    position: absolute;
-    left: 116px;
     font-family: bold-robo;
-    border-radius: 20px;
+    border-radius: 14px;
     padding: 10px 15px 10px 15px;
 }
+
 /* ------------------------------------------------------------------------------------ */
 
 /* Premium Section  */
@@ -217,7 +199,7 @@ span {
     background-image: url(assets/imgz-icons/premium-bg.png);
     background-size: cover;
     background-position: center;
-    height: 500px;
+    height: 100%;
 }
 
 /* girl img in premium section  */
@@ -229,7 +211,8 @@ span {
 .pre-heading {
     font-family: bold-robo;
 }
-.premium-p{
+
+.premium-p {
     color: rgba(138, 138, 138, 1);
 }
 
@@ -251,68 +234,103 @@ span {
     bottom: 12px;
     left: 26px;
 }
+
 /* ---------------------------------------------------------------------------------------- */
 /* Student review Section  */
-/* padding to the student cards */
-.st{
-    padding: 15px;
-}
 /* color to the student review paragraphs */
-.st-p{
+.st-p {
     color: rgba(172, 172, 172, 1);
 }
-.st-shadow{
-    box-shadow: 2px 3px 7px 7px rgba(138, 138, 138, 1) !important;
 
-}
 /* -------------------------------------------------------------------------------------------- */
 /* Professor Section  */
 /* Professor section used the code of track section  as a reference point*/
 /* ------------------------------------------------------------------------------------------------ */
 /* NewsLetter Section  */
-.letter-bg-clr{
-    background-color: var(--purple);
+.letter-bg-clr {
+    background-image:  linear-gradient(347deg, #0f059b98, #541a70a9, #29676a);
     border-radius: 10px;
 }
-.letter-email{
-    padding-left: 28px;
-    border-radius: 50px;
-    height: 60px;
-    width: 100%;
-    position: relative;
-    left: 197px;
-    outline: none;
+.email-input{
+    padding: 24px 10px 24px 15px;
 }
-.letter-email:focus{
-    outline: var(--orng);
-}
-.send-btn{
-    position: absolute;
-    right: 211px;
-    top: 7px;
-    border-radius: 50px;
-    height: 78%;
-    width: 40%;
+.send-btn {
+    padding: 0 20px 0 20px;
     background-color: var(--orng);
 }
+
 /* ------------------------------------------------------------------------------------ */
 /* Footer Section  */
-.foot{
+.foot {
     background-image: url(assets/imgz-icons/footer-bg.png);
     background-size: cover;
     background-position: center;
-    height: 400px;
+    height: 100%;
+}
+
+/* ----------------------------------------------------------------------------------------- */
+/* Contact us section  */
+.con-heading {
+    font-family: popp-bold;
+    text-shadow: 2px 3px rgba(0, 0, 0, 0.199);
+}
+
+.con-para {
+    color: #717171;
+    font-family: popp;
+}
+
+.live-chat {
+    background-color: var(--purple);
+
+    border-radius: 10px;
+}
+
+.info {
+    font-family: semibold-popp;
+}
+
+.say-some {
+    color: #C9C9C9;
+    font-family: popp;
+}
+
+.conte {
+    border-radius: 10px;
+}
+
+.btn-send {
+    float: right;
+}
+/* ---------------------------------------------------------------------------------------------- */
+/* Courses section  */
+.info-bg{
+    border-radius: 20px;
+    background-image: linear-gradient(274deg, #ba56ec98, #541a70a9,  #4D2C5E);
+}
+.contact-btn{
+    border-radius: 20px;
+    background-color: var(--orng);
+    width: 58%;
+}
+.map{
+    border-radius: 20px;
+    width: 100%;
+    height: 290px;
 }
 
 
 /* Media Queries For Resposiveness */
+@media screen and (max-width:1022px){
+    .offers{
+        position: static;
+    }
+   
+}
+
+
 /* MQ at md  */
 @media screen and (max-width:768px) {
-
-    /* height of background-image at 768  */
-    .hero {
-        height: 1032px;
-    }
 
     /* to hide .search-icon at 768 */
     .search-icon {
@@ -324,110 +342,21 @@ span {
         padding-left: 62px;
     }
 
-    /* custom height of input field and continue button  */
-    .continue,
-    .location {
-        height: 27%;
-    }
-
-    .offers {
-        bottom: 0;
-    }
-
-    .stars {
-        left: 223px;
-    }
-
-    .bulb,
-    .arrow {
-        display: none;
-    }
-
-    .premuim-bg {
-        height: 1070px;
-    }
-    .letter-email{
-        left: 41px;
-        width: 424px;
-    }
-    .send-btn{
-        right: 72px;
-    }
-    .foot{
-        height: 479px;
-    }
-    .font-size{
+    .font-size {
         font-size: 15px;
     }
 }
 
-
-/* MQ at sm  */
-@media screen and (max-width:576px) {
-
-    /* adjusting continue button  on small screens  */
-    .continue {
-        right: 165px;
-    }
-
-    /* height of background-image at 576  */
-    .hero {
-        height: 981px;
-    }
-
-    /* adjusted width height of input field  */
-    .location {
-
-        width: 70%;
-        height: 25%;
-    }
-
-    .offers {
-        bottom: 0;
-    }
-
-    .stars {
-        left: 405px;
-    }
-
-    .bulb,
-    .arrow {
-        display: none;
-    }
-
-    .premuim-bg {
-        height: 907px;
-    }
-    .send-btn{
-        right: 160px;
-        height: unset;
-    }
-    .foot{
-        height: 1005px;
+@media screen and (max-width:575px){
+    .static-position{
+        position: static !important;
     }
 }
 
 /* MQ for perfect mobile view  */
 @media screen and (max-width:400px) {
-
-    /* height of background-image at 400  */
-    .hero {
-        height: 887px;
-    }
-
-    .roboto-brand {
+.roboto-brand {
         font-size: 20px;
-    }
-
-    /* width of input field  */
-    .location {
-        width: 100%;
-    }
-
-    .search-icon {
-        display: block;
-        top: 282px;
-        left: 33px;
     }
 
     /* for pushing the main description to the left  */
@@ -435,47 +364,17 @@ span {
         padding-left: 16px;
     }
 
-    /* adjusting style of continue button  in mobile view */
-    .continue {
-        top: 342px;
-        right: 90px;
-        width: 50%;
-        height: 20%;
-    }
-
-    .offers {
-        bottom: 0;
-    }
-
-    .stars {
-        left: 214px;
-    }
-
-    .bulb,
-    .arrow {
-        display: none;
-    }
-
-    .premuim-bg {
-        height: 820px;
-    }
-
     .position-relative {
         bottom: 22px;
         left: 15px;
     }
-    .pre-heading{
+
+    .pre-heading {
         font-size: 2rem;
     }
-    .letter-email{
-        width: 298px;
-        left: 18px;
-    }
-    .send-btn{
-        right: 114px;
-    }
-    .foot{
-        height: 1026px;
+
+    .btn-send {
+        width: 100%;
     }
 
 }
